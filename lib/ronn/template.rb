@@ -50,9 +50,9 @@ module Ronn
 
     def page_name
       if section
-        "#{name}(#{section})"
+        "#{name.upcase}(#{section})"
       else
-        name
+        name.upcase
       end
     end
 
