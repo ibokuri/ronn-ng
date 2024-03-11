@@ -2,31 +2,79 @@
 
 /* STRUCTURE, INDENT, MARGINS */
 
-body#manpage                        { margin:0 }
-.mp {
-    max-width:100ex;
-    padding:0 9ex 1ex 4ex;
+body#manpage {
+  margin: 0
 }
 
-.mp p,  .mp pre,
-.mp ul, .mp ol, .mp dl              { margin:0 0 20px 0 }
-.mp h2                              { margin:10px 0 0 0 }
+.mp {
+  max-width: 610.5px;
+  padding: 10px 10px 0 10px;
+}
 
-.mp > p, .mp > pre, .mp > ul,
-.mp > ol, .mp > dl                  { margin-left:8ex }
-.mp h3                              { margin:0 0 0 4ex }
+.mp p,
+.mp pre,
+.mp ul,
+.mp ol,
+.mp dl {
+  margin: 0 0 20px 0
+}
 
-.mp dt                              { margin:0; clear:left }
-.mp dt.flush                        { float:left; width:8ex }
-.mp dd                              { margin:0 0 0 9ex }
-.mp h1, .mp h2, .mp h3, .mp h4      { clear:left }
+.mp h2 {
+  margin: 10px 0 0 0
+}
 
-.mp pre                             { margin-bottom:20px }
-.mp pre+h2, .mp pre+h3              { margin-top:22px }
-.mp h2+pre, .mp h3+pre              { margin-top:5px }
+.mp>p,
+.mp>pre,
+.mp>ul,
+.mp>ol,
+.mp>dl {
+  margin-left: 8ex
+}
 
-.mp img                             { display:block;margin:auto }
-.mp h1.man-title                    { display:none }
+.mp h3 {
+  margin: 0 0 0 4ex
+}
+
+.mp dt {
+  margin: 0;
+  clear: left
+}
+
+.mp dt.flush {
+  float: left;
+  width: 8ex
+}
+
+/*.mp dd                              { margin:0 0 0 9ex }*/
+.mp h1,
+.mp h2,
+.mp h3,
+.mp h4 {
+  clear: left
+}
+
+.mp pre {
+  margin-bottom: 20px
+}
+
+.mp pre+h2,
+.mp pre+h3 {
+  margin-top: 22px
+}
+
+.mp h2+pre,
+.mp h3+pre {
+  margin-top: 5px
+}
+
+.mp img {
+  display: block;
+  margin: auto
+}
+
+.mp h1.man-title {
+  display: none
+}
 
 /* FONTS */
 
