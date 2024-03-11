@@ -416,18 +416,18 @@ module Ronn
         next if items.any? { |item| item.inner_text.strip.split("\n", 2).first !~ /:$/ }
 
         dl = Nokogiri::XML::Node.new 'dl', html
-        items.each do |item|
+        items.each_with_index do |item, index|
+          dt = Nokogiri::XML::Node.new 'dt', html
+          dd = Nokogiri::XML::Node.new 'dd', html
+
           # This processing is specific to how Markdown generates definition lists
           term, definition = item.inner_html.strip.split(":\n", 2)
           term = term.sub(/^<p>/, '')
 
-          dt = Nokogiri::XML::Node.new 'dt', html
+          dd.children = Nokogiri::HTML.fragment(index == items.size - 1 ? definition : definition + '<br /><br />')
           dt.children = Nokogiri::HTML.fragment(term)
-          dt.attributes['class'] = 'flush' if dt.inner_text.length <= 7
 
-          dd = Nokogiri::XML::Node.new 'dd', html
-          dd_contents = Nokogiri::HTML.fragment(definition)
-          dd.children = dd_contents
+          dt.attributes['class'] = 'flush' if dt.inner_text.length <= 7
 
           dl.add_child(dt)
           dl.add_child(dd)
