@@ -270,7 +270,11 @@ module Ronn
 
       template = Ronn::Template.new(self)
       template.context.push html: to_html_fragment(nil)
-      template.render(layout_path || 'default')
+      if @basename == 'index.md'
+        template.render(layout_path || 'index')
+      else
+        template.render(layout_path || 'default')
+      end
     end
 
     # Convert the document to HTML and return the result
