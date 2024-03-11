@@ -186,17 +186,28 @@ h3+pre {
 
 /* DOCUMENT HEADER AND FOOTER AREAS */
 
-ol.man-decor, ol.man-decor li {
-    margin:3px 0 10px 0;
-    padding:0;
-    float:left;
-    width:33%;
-    list-style-type:none;
-    text-transform:uppercase;
-    color:#999;
-    letter-spacing:1px;
+ol.man-decor,
+ol.man-decor li {
+  margin: 3px 0 10px 0;
+  padding: 0;
+  float: left;
+  width: 33%;
+  list-style-type: none;
 }
-ol.man-decor                  { width:100% }
-ol.man-decor li.tl            { text-align:left }
-ol.man-decor li.tc            { text-align:center; letter-spacing:4px }
-ol.man-decor li.tr            { text-align:right; float:right }
+
+ol.man-decor {
+  width: 100%
+}
+
+ol.man-decor li.tl {
+  text-align: left
+}
+
+ol.man-decor li.tc {
+  text-align: center;
+}
+
+ol.man-decor li.tr {
+  text-align: right;
+  float: right
+}
