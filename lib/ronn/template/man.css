@@ -45,7 +45,6 @@ body#manpage {
   width: 8ex
 }
 
-/*.mp dd                              { margin:0 0 0 9ex }*/
 .mp h1,
 .mp h2,
 .mp h3,
@@ -78,57 +77,112 @@ body#manpage {
 
 /* FONTS */
 
-.mp, .mp code, .mp pre, .mp tt,
-.mp kbd, .mp samp, .mp h3, .mp h4 {
-    font-family:monospace;
-    font-size:14px;
-    line-height:1.42857142857143;
+.mp,
+.mp code,
+.mp pre,
+.mp tt,
+.mp kbd,
+.mp samp,
+.mp h3,
+.mp h4 {
+  font-family: monospace;
+  font-size: 13px;
+  line-height: 1.42857142857143;
 }
+
 .mp h2 {
-  font-size:16px;
-  line-height:1.25;
+  font-size: 13px;
+  line-height: 1.25;
 }
+
 .mp h1 {
-  font-size:20px;
-  line-height:2;
+  font-size: 13px;
+  line-height: 2;
 }
 
 /* TEXT STYLES */
 
 .mp {
-  text-align:justify;
-  background:#fff;
-}
-.mp, .mp code, .mp pre,
-.mp pre code, .mp tt, .mp kbd,
-.mp samp                            { color:#131211 }
-.mp h1, .mp h2, .mp h3, .mp h4      { color:#030201 }
-.mp u                               { text-decoration:underline; }
-
-.mp code, .mp strong, .mp b {
-    font-weight:bold;
-    color:#131211;
+  background: #fff;
 }
 
-.mp em, .mp var {
-    font-style:italic;
-    color:#232221;
-    text-decoration:none;
+.mp,
+.mp code,
+.mp pre,
+.mp pre code,
+.mp tt,
+.mp kbd,
+.mp samp {
+  color: #131211
+}
+
+.mp h1,
+.mp h2,
+.mp h3,
+.mp h4 {
+  color: #030201
+}
+
+.mp u {
+  text-decoration: underline;
+}
+
+.mp code,
+.mp strong,
+.mp b {
+  font-weight: bold;
+  color: #131211;
+}
+
+.mp em,
+.mp var {
+  font-style: italic;
+  color: #232221;
+  text-decoration: none;
 }
 
 /* LINKS */
 
-.mp a, .mp a:link, .mp a:hover,
-.mp a code, .mp a pre, .mp a tt,
-.mp a kbd, .mp a samp              { color:#0000ff }
+.mp a,
+.mp a:link,
+.mp a:hover,
+.mp a code,
+.mp a pre,
+.mp a tt,
+.mp a kbd,
+.mp a samp {
+  color: #0000EE;
+  text-decoration: none;
 
-.mp b.man-ref                      { font-weight:normal;color:#434241 }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.mp b.man-ref {
+  color: #0000EE;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 /* PREFORMATTED BLOCKS */
 
-.mp pre                            { padding:0 4ex }
-.mp pre code                       { font-weight:normal;color:#434241 }
-.mp h2+pre, h3+pre                 { padding-left:0 }
+.mp pre {
+  padding: 0 4ex
+}
+
+.mp pre code {
+  font-weight: normal;
+  color: #434241
+}
+
+.mp h2+pre,
+h3+pre {
+  padding-left: 0
+}
 
 /* DOCUMENT HEADER AND FOOTER AREAS */
 
