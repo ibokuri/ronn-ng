@@ -69,7 +69,7 @@ module Ronn
     end
 
     def date
-      @document.date.strftime('%B %Y')
+      @document.date.strftime('%B %-d, %Y')
     end
 
     def wrap_class_name
